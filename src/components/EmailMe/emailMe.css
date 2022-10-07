@@ -1,0 +1,6 @@
+#email-me{
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+    background-color: tan;
+}
