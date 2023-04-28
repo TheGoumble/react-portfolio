@@ -139,4 +139,9 @@ a:hover {
 }
 
 
-  
+.timeline-area{
+    margin: 90px auto;
+    width: 360px;
+    border-left: 2px solid #000000;
+    padding: 0 20px 0 30px;
+}

@@ -1,19 +1,23 @@
-import Header from './components/Header';
-import Footer from './components/Footer';// import { Routes, Route, Link } from 'react-router-dom';
-import Gallery from './components/Gallery';
+import { Routes, Route } from "react-router-dom"
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/App.css';
-
+import Footer from "./components/Footer"
+// import { Routes, Route, Link } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./assets/App.css"
+import Home from "./pages/Home/Home"
+import Info from "./pages/Info/Info"
+import NotFound from "./pages/NotFound/NotFound"
 
 function App() {
   return (
     <div className="parent-container">
-      <Header />
-      <Gallery />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:name" element={<Info />} />
+      </Routes>
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
