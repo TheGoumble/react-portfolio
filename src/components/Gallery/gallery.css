@@ -1,0 +1,111 @@
+.projects {
+  height: 14rem;
+}
+
+.squares {
+  --u: 13px;
+  --c1: #a29478;
+  --c2: #616c7f;
+  --c3: #414c66;
+  --gp: 50% / calc(var(--u) * 10) calc(var(--u) * 8);
+  --dg: 0 25%, #fff0 0 100%;
+  --dr: from 45deg at;
+  --dl: from -135deg at;
+  --du: from -45deg at 50%;
+  --dd: from 135deg at 50%;
+  background: 
+	/*right*/ conic-gradient(var(--dr) 86% 62%, var(--c1) var(--dg))
+      var(--gp),
+    conic-gradient(var(--dr) 76% 62%, var(--c3) var(--dg)) var(--gp),
+    conic-gradient(var(--dr) 74.5% 62%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--dr) 65% 62%, var(--c2) var(--dg)) var(--gp),
+    conic-gradient(var(--dr) 63.5% 62%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--dr) 56% 62%, var(--c3) var(--dg)) var(--gp),
+    conic-gradient(var(--dr) 54.5% 62%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--dr) 50% 62%, var(--c2) var(--dg)) var(--gp),
+    /*left*/ conic-gradient(var(--dl) 14% 62%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--dl) 24% 62%, var(--c3) var(--dg)) var(--gp),
+    conic-gradient(var(--dl) 25.5% 62%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--dl) 35% 62%, var(--c2) var(--dg)) var(--gp),
+    conic-gradient(var(--dl) 36.5% 62%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--dl) 44% 62%, var(--c3) var(--dg)) var(--gp),
+    conic-gradient(var(--dl) 45.5% 62%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--dl) 50% 62%, var(--c2) var(--dg)) var(--gp),
+    /*up*/ conic-gradient(var(--du) 19%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--du) 31%, var(--c3) var(--dg)) var(--gp),
+    conic-gradient(var(--du) 33%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--du) 43.5%, var(--c2) var(--dg)) var(--gp),
+    conic-gradient(var(--du) 45.5%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--du) 55%, var(--c3) var(--dg)) var(--gp),
+    conic-gradient(var(--du) 57%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--du) 66%, var(--c2) var(--dg)) var(--gp),
+    /*down*/ conic-gradient(var(--dd) 81%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--dd) 69%, var(--c3) var(--dg)) var(--gp),
+    conic-gradient(var(--dd) 67%, var(--c1) var(--dg)) var(--gp),
+    conic-gradient(var(--dd) 58%, var(--c2) var(--dg)) var(--gp);
+}
+
+.squares > article > header {
+  color: rgb(255, 255, 255);
+  background: rgb(99, 108, 125);
+  border-color: rgb(160, 149, 123);
+  border-style: solid;
+  border-width: 0.18rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.squares > article > header > a {
+  color: rgb(255, 255, 255);
+}
+
+.squares > article > div > a {
+  background: rgb(67, 76, 100);
+  color: white;
+  height: 3.5rem;
+  padding: 10px;
+  border-color: rgb(160, 149, 123);
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.squares > article > div > a > svg{
+  color: rgb(160, 149, 123);
+
+}
+
+.lava-lamp{
+  background: radial-gradient( #471a19 30%, #290f0e 60%, #120706 80%, #050202 90%, #000000 100% );
+  color: black;
+}
+
+.lava-lamp > article > div > a{
+  background: radial-gradient(#FF9C12 0%, #FA9712 30%, #ED8A14 50%, #D67316 70%, #B65419 80%, #9C3A1C 100%);
+  opacity: 0.9;
+  border-radius:77% 85% 100% 73% / 81% 100% 79% 97% ;
+  padding: .4rem;
+  animation: wobble 6s ease-in-out alternate infinite,
+  blob-three ease-in-out 16s infinite;
+  color: black;
+}
+
+.lava-lamp > article > header > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: radial-gradient(#FF9C12 0%, #FA9712 30%, #ED8A14 50%, #D67316 70%, #B65419 80%, #9C3A1C 100%);
+  opacity: 0.9;
+  border-radius: 67% 43% 53% 53% / 49% 50% 48% 51% ;
+  height: 7rem;
+}
+
+.waves{
+  background-color: #fdf8d7;
+}
+.waves:before{
+  background-color: #fdf8d7;
+}
