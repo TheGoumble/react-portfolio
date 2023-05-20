@@ -72,40 +72,99 @@
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.squares > article > div > a > svg{
+.squares > article > div > a > svg {
   color: rgb(160, 149, 123);
-
 }
 
-.lava-lamp{
-  background: radial-gradient( #471a19 30%, #290f0e 60%, #120706 80%, #050202 90%, #000000 100% );
+.lava-lamp {
+  background: radial-gradient(
+    #471a19 30%,
+    #290f0e 60%,
+    #120706 80%,
+    #050202 90%,
+    #000000 100%
+  );
   color: black;
 }
 
-.lava-lamp > article > div > a{
-  background: radial-gradient(#FF9C12 0%, #FA9712 30%, #ED8A14 50%, #D67316 70%, #B65419 80%, #9C3A1C 100%);
+.lava-lamp > article > div > a {
+  background: radial-gradient(
+    #ff9c12 0%,
+    #fa9712 30%,
+    #ed8a14 50%,
+    #d67316 70%,
+    #b65419 80%,
+    #9c3a1c 100%
+  );
   opacity: 0.9;
-  border-radius:77% 85% 100% 73% / 81% 100% 79% 97% ;
-  padding: .4rem;
-  animation: wobble 6s ease-in-out alternate infinite,
-  blob-three ease-in-out 16s infinite;
+  border-radius: 92% 90% 100% 63% / 100% 87% 100% 100%;
+  padding: 0.4rem;
   color: black;
 }
 
-.lava-lamp > article > header > div{
+.lava-lamp > article > header > div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: radial-gradient(#FF9C12 0%, #FA9712 30%, #ED8A14 50%, #D67316 70%, #B65419 80%, #9C3A1C 100%);
+  background: radial-gradient(
+    #ff9c12 0%,
+    #fa9712 30%,
+    #ed8a14 50%,
+    #d67316 70%,
+    #b65419 80%,
+    #9c3a1c 100%
+  );
   opacity: 0.9;
-  border-radius: 67% 43% 53% 53% / 49% 50% 48% 51% ;
+  border-radius: 67% 43% 53% 53% / 49% 50% 48% 51%;
   height: 7rem;
 }
 
-.waves{
+.waves {
   background-color: #fdf8d7;
 }
-.waves:before{
-  background-color: #fdf8d7;
-}
+
+.waves > article > div{
+ background-image: url("data:image/svg+xml,%3Csvg class='waves' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%0AviewBox='0 24 150 28' preserveAspectRatio='none' shape-rendering='auto'%3E%3Cdefs%3E%3Cpath id='gentle-wave' d='M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z' /%3E%3C/defs%3E%3Cg class='parallax'%3E%3Cuse xlink:href='%23gentle-wave' x='48' y='7' fill='%239CCECB' /%3E%3C/g%3E%3C/svg%3E");
+  background-position: bottom;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 100px;
+  animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  z-index: 1;
+  }
+  
+  .waves > article > div > #btn-group:nth-of-type(2) {
+  opacity: 0.7;
+  animation: swell 5s ease -1.25s infinite, wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite;
+  z-index: 0;
+  }
+  
+  @keyframes wave {
+  0% {
+  background-position-x: 0%;
+  }
+  100% {
+  background-position-x: -500px;
+  }
+  }
+  
+  @keyframes swell {
+  0%, 100% {
+  background-position: right bottom 10px;
+  }
+  50% {
+  background-position: right bottom 0;
+  }
+  }
+
+
+  
+  .card .author {
+      font-weight: 500;
+  }
+  
+  .card .prior {
+      font-weight: 200;
+  }

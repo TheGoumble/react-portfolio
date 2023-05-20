@@ -26,9 +26,9 @@ export default function GalleryCard({
               </p>
             </div>
           </header>
-          <div className="d-flex justify-content-around w-100">
+          <div id="btn-group" className="d-flex justify-content-around w-100">
             <Link to={`${website}`}>
-              <Laptop size={27} /> Website
+              <Laptop size={27} target="_blank" rel="noreferrer"/> Website
             </Link>
             <Link to={`/${title}`}>
               <InfoCircleFill size={27} /> about

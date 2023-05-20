@@ -7,16 +7,20 @@ import "./assets/App.css"
 import Home from "./pages/Home/Home"
 import Info from "./pages/Info/Info"
 import NotFound from "./pages/NotFound/NotFound"
+import Background from "./components/Background/Background"
 
 function App() {
   return (
-    <div className="parent-container">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/:name" element={<Info />} />
-      </Routes>
-      <Footer />
-    </div>
+    <>
+      <Background />
+      <div className="parent-container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/:name" element={<Info />} />
+        </Routes>
+        <Footer />
+      </div>
+    </>
   )
 }
 

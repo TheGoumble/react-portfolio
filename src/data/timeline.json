@@ -1,0 +1,22 @@
+[
+  {
+    "year": 2023,
+    "title": "GMTK Game Jam",
+    "content": "to be writen"
+  },
+  {
+    "year": 2022,
+    "title": "Full Stack Software Engineering Boot Camp & Hackathon",
+    "content": "My journy in the computer science took a transformative turn when I enrolled in a rigorous software development bootcamp. Eager to learn more, I immersed myself in an intense learning environment, devouring lessons on programming, algorithms, and software engineering principles. The bootcamp provided me with invaluable hands-on ecperience, exposing me to real-world projects and industry best practices. I was shown to develop full-stack apps from the ground up. Armed with newfound abilities, I and a few graduates from my class dove into our first hackathon, putting my skills to the test in a high-pressure, time-constrained environment. In an uninterupted 32 hours we developed a full stack application ready to be deployed to the app store. The experience was beyond belief and I hold it dear to me."
+  },
+  {
+    "year": 2021,
+    "title": "Began college at Florida Atlantic University",
+    "content": "After the Covid outbreak, my first year at Florida Atlantic University marked a pivotal moment in my journy through computer science. My first steps on campus, I felt a mix of excitement and trepidation. Adjusting to the new normal proved to be a challenge, with remote learning and limited social interations. Finding my groove seemed daunting, but I was determined to stay headstrong."
+  },
+  {
+    "year": 2020,
+    "title": "Game dev competition",
+    "content": "In high school, my group of friends and I participated in a game competition, which challenged us with creating a game using Unity from scratch. Having zero experience in game development, we dove headfirst and poured countless hours into tutorials and demos. We faced numerous obstacles along the way but our determination never wavered. Though collaboration, dedication, and caffinated drinks, we got our first ever taste of sweet victory in the computer world with the district award being ours. This experience not only certified the love I have to computer science but also found a shared passion is where the best work appears." 
+  }
+]

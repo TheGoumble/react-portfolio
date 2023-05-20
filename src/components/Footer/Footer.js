@@ -10,7 +10,7 @@ export default function Footer() {
           <Row className="justify-content-center text-center">
             <Col md={6}>
               <a href={repoUrl} target="_blank" rel="noreferrer" >
-                  <Github color="#000000" size={27} />
+                  <Github color="#ffff" size={27} />
                   <p><small>See Code in Github</small></p>
               </a>
             </Col>
