@@ -7,7 +7,7 @@ export default function Gallery() {
     <Container fluid>
       <Row xs={1} sm={2} lg={3} className="g-4 justify-content-center">
         {data.map((element) => {
-          return !element ? <p>Loading</p> : <Card data={element} />
+          return !element ? <p>Loading</p> : <Card data={element} key={element.id}/>
         })}
       </Row>
     </Container>

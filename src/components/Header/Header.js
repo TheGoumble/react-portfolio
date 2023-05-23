@@ -8,7 +8,7 @@ export default function Header() {
           <Col>
             <h1>Javier Andres Vargas</h1>
             <p>Full Stack Engineer & Game Developer</p>
-            <p>
+            <p >
               As a full-stack developer, I am passionate about contributing to
               the digital world through my expertise in coding. Whether it's a
               fun little project or a comprehensive full-stack application, I

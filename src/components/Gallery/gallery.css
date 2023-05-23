@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap");
+
 .projects {
   height: 14rem;
 }
@@ -43,9 +48,10 @@
     conic-gradient(var(--dd) 69%, var(--c3) var(--dg)) var(--gp),
     conic-gradient(var(--dd) 67%, var(--c1) var(--dg)) var(--gp),
     conic-gradient(var(--dd) 58%, var(--c2) var(--dg)) var(--gp);
+  font-family: "Rajdhani", sans-serif;
 }
 
-.squares > article > header {
+.squares > article > .header {
   color: rgb(255, 255, 255);
   background: rgb(99, 108, 125);
   border-color: rgb(160, 149, 123);
@@ -54,8 +60,11 @@
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.squares > article > header > a {
+.squares > article > .header > a {
   color: rgb(255, 255, 255);
+}
+.squares > article > .header > h2 > a {
+  color: white;
 }
 
 .squares > article > div > a {
@@ -77,6 +86,7 @@
 }
 
 .lava-lamp {
+  font-family: "Rowdies", cursive;
   background: radial-gradient(
     #471a19 30%,
     #290f0e 60%,
@@ -102,7 +112,15 @@
   color: black;
 }
 
-.lava-lamp > article > header > div {
+.lava-lamp > article > .header > h2 > a {
+  color: #ff9c12;
+}
+.lava-lamp > article > .header > h2 {
+  font-family: "MuseoModerno", cursive !important;
+}
+
+.lava-lamp > article > .header > div {
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,54 +135,65 @@
   );
   opacity: 0.9;
   border-radius: 67% 43% 53% 53% / 49% 50% 48% 51%;
-  height: 7rem;
+  height: 6rem;
 }
 
 .waves {
+  position: relative;
+  overflow: hidden;
+  font-family: "Lora", serif;
   background-color: #fdf8d7;
 }
+.waves > article {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.waves > article > .header > div {
+  background-color: #6abdcd;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.waves > article > #btn-group{
+  height: 2rem;
+}
+.waves-effect {
+  width:10rem;
+  height: 60;
+}
 
-.waves > article > div{
- background-image: url("data:image/svg+xml,%3Csvg class='waves' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%0AviewBox='0 24 150 28' preserveAspectRatio='none' shape-rendering='auto'%3E%3Cdefs%3E%3Cpath id='gentle-wave' d='M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z' /%3E%3C/defs%3E%3Cg class='parallax'%3E%3Cuse xlink:href='%23gentle-wave' x='48' y='7' fill='%239CCECB' /%3E%3C/g%3E%3C/svg%3E");
-  background-position: bottom;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-  height: 100px;
-  animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  z-index: 1;
-  }
-  
-  .waves > article > div > #btn-group:nth-of-type(2) {
-  opacity: 0.7;
-  animation: swell 5s ease -1.25s infinite, wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite;
-  z-index: 0;
-  }
-  
-  @keyframes wave {
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
   0% {
-  background-position-x: 0%;
+   transform: translate3d(-90px,0,0);
   }
-  100% {
-  background-position-x: -500px;
+  100% { 
+    transform: translate3d(85px,0,0);
   }
-  }
-  
-  @keyframes swell {
-  0%, 100% {
-  background-position: right bottom 10px;
-  }
-  50% {
-  background-position: right bottom 0;
-  }
-  }
+}
+.card .author {
+  font-weight: 500;
+}
 
-
-  
-  .card .author {
-      font-weight: 500;
-  }
-  
-  .card .prior {
-      font-weight: 200;
-  }
+.card .prior {
+  font-weight: 200;
+}

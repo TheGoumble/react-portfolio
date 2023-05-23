@@ -7,7 +7,8 @@
     "tech": "Reactjs, Bootstrap, Firebase-hosting",
     "content": "Designed and developed an engaging website for a local West Palm Beach cleaning service",
     "website": "https://thedreammaids.web.app/",
-    "cover": "/images/covers/dream-maids.webp"
+    "cover": "/images/covers/dream-maids.webp",
+    "svg": "0 24 150 28"
   },
   {
     "id": 2,

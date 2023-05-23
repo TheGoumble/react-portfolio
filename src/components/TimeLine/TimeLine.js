@@ -6,7 +6,7 @@ export default function TimeLine() {
     return (
   <section>
     {data.map((element) => {
-          return !element ? <p>Loading</p> : <TimeStamp data={element} />
+          return !element ? <p>Loading</p> : <TimeStamp data={element} key={element.year}/>
         })}
   </section>
     );
