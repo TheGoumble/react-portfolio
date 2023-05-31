@@ -1,0 +1,12 @@
+.floor {
+  position: relative;
+  height: 8rem;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.sky {
+  height: 14rem;
+  width: 100%;
+  background: linear-gradient(to top, #2a6392, #2a6392e1,#2a6392c3, transparent);
+}

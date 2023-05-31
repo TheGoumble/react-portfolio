@@ -18,8 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/:name" element={<Info />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }
