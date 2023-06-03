@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lora&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
 .parent-container {
   width: 93%;
   margin: 0 auto;
@@ -18,10 +22,6 @@
   border-radius: 50%;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lora&display=swap");
-
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
-
 *,
 *::before,
 *::after {
@@ -33,10 +33,10 @@ body {
   background: black;
 }
 
-header{
-    color: white;
-    /* FIX THIS */
-    font-family: 'Zen Dots', cursive;
+header {
+  color: white;
+  /* FIX THIS */
+  font-family: "Zen Dots", cursive;
 }
 
 .site-intro {
@@ -48,7 +48,7 @@ a:link {
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .button-effect {
@@ -70,4 +70,3 @@ a:hover {
     filter: none;
   }
 }
-

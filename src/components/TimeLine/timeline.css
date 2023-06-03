@@ -37,22 +37,33 @@
 
 .space-items {
   position: relative;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-around;
+  width: 100%;
+  height: 30rem;
 }
 
 #space-goumble {
-  width: 30%;
+height: 17.5rem;
+width: 17.5rem;
+  animation: floating 20s infinite linear;
+}
+#space-goumble > img{
+    height: 17rem;
+    width: 17rem;
+}
+@keyframes floating {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
 }
 #space-ship {
   width: 30%;
-}
-
-#wire {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px; /* Adjust the width of the wire */
-  height: 100px; /* Adjust the height of the wire */
-  background-color: gray; /* Adjust the color of the wire */
-  transform-origin: top center;
-  transform: translateX(-50%) translateY(-50%);
 }

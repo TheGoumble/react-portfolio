@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Dream Maids",
-    "style": "waves",
+    "style": "dream",
     "language": "JavaScript, Html, CSS",
     "tech": "Reactjs, Bootstrap, Firebase-hosting",
     "content": "Designed and developed an engaging website for a local West Palm Beach cleaning service",
@@ -13,9 +13,9 @@
   {
     "id": 2,
     "title": "Meta Beanie",
-    "style": "lava-lamp",
+    "style": "meta",
     "language": "JavaScript, Html, CSS",
-    "tech": "Reactjs, Bootstrap, Firebase(GCP), Expressjs, MongoDB",
+    "tech": "Reactjs, Firebase(GCP), Expressjs, MongoDB",
     "content": "Built a dynamic web application that allows discussions and collaboration within the gaming community. Providing a platform to strategies and tips to enhance gameplay.",
     "website": "https://final-project-jv.web.app",
     "cover": "/images/covers/meta-beanie.webp"
@@ -23,7 +23,7 @@
   {
     "id": 3,
     "title": "React Calculator",
-    "style": "squares",
+    "style": "calculator",
     "language": "JavaScript, Html, CSS",
     "tech": "Reactjs, Bootstrap, gh-pages",
     "content": "Developed a working React.js calculator.",

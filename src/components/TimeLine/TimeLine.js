@@ -16,8 +16,19 @@ export default function TimeLine() {
     <>
       <div className="space-items">
         <img src={SpaceShip} id="space-ship" />
-        <img src={SpaceGoumble} id="space-goumble" />
-        <div id="wire"></div>
+
+        <marquee
+          direction="down"
+          width="50%"
+          height="100%"
+          behavior="alternate"
+        >
+          <marquee behavior="alternate" width="100%" height="100%">
+            <div id="space-goumble">
+              <img src={SpaceGoumble}  />
+            </div>
+          </marquee>
+        </marquee>
       </div>
       <section className="timeline">
         <div className="time-container">

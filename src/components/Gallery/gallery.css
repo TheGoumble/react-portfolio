@@ -3,168 +3,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Rubik+Glitch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap");
 
-.projects {
-  height: 14rem;
+.project-cards {
+  border-radius: 1.5rem;
+  border: solid 0.5rem rgb(117, 119, 121);
+  height: 12rem;
 }
 
-.squares {
-  --u: 13px;
-  --c1: #a29478;
-  --c2: #616c7f;
-  --c3: #414c66;
-  --gp: 50% / calc(var(--u) * 10) calc(var(--u) * 8);
-  --dg: 0 25%, #fff0 0 100%;
-  --dr: from 45deg at;
-  --dl: from -135deg at;
-  --du: from -45deg at 50%;
-  --dd: from 135deg at 50%;
-  background: 
-	/*right*/ conic-gradient(var(--dr) 86% 62%, var(--c1) var(--dg))
-      var(--gp),
-    conic-gradient(var(--dr) 76% 62%, var(--c3) var(--dg)) var(--gp),
-    conic-gradient(var(--dr) 74.5% 62%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--dr) 65% 62%, var(--c2) var(--dg)) var(--gp),
-    conic-gradient(var(--dr) 63.5% 62%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--dr) 56% 62%, var(--c3) var(--dg)) var(--gp),
-    conic-gradient(var(--dr) 54.5% 62%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--dr) 50% 62%, var(--c2) var(--dg)) var(--gp),
-    /*left*/ conic-gradient(var(--dl) 14% 62%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--dl) 24% 62%, var(--c3) var(--dg)) var(--gp),
-    conic-gradient(var(--dl) 25.5% 62%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--dl) 35% 62%, var(--c2) var(--dg)) var(--gp),
-    conic-gradient(var(--dl) 36.5% 62%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--dl) 44% 62%, var(--c3) var(--dg)) var(--gp),
-    conic-gradient(var(--dl) 45.5% 62%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--dl) 50% 62%, var(--c2) var(--dg)) var(--gp),
-    /*up*/ conic-gradient(var(--du) 19%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--du) 31%, var(--c3) var(--dg)) var(--gp),
-    conic-gradient(var(--du) 33%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--du) 43.5%, var(--c2) var(--dg)) var(--gp),
-    conic-gradient(var(--du) 45.5%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--du) 55%, var(--c3) var(--dg)) var(--gp),
-    conic-gradient(var(--du) 57%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--du) 66%, var(--c2) var(--dg)) var(--gp),
-    /*down*/ conic-gradient(var(--dd) 81%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--dd) 69%, var(--c3) var(--dg)) var(--gp),
-    conic-gradient(var(--dd) 67%, var(--c1) var(--dg)) var(--gp),
-    conic-gradient(var(--dd) 58%, var(--c2) var(--dg)) var(--gp);
-  font-family: "Rajdhani", sans-serif;
-}
-
-.squares > article > .header {
-  color: rgb(255, 255, 255);
-  background: rgb(99, 108, 125);
-  border-color: rgb(160, 149, 123);
-  border-style: solid;
-  border-width: 0.18rem;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.squares > article > .header > a {
-  color: rgb(255, 255, 255);
-}
-.squares > article > .header > h2 > a {
-  color: white;
-}
-
-.squares > article > div > a {
-  background: rgb(67, 76, 100);
-  color: white;
-  height: 3.5rem;
-  padding: 10px;
-  border-color: rgb(160, 149, 123);
-  border-style: solid;
+.project-cards > div {
+  height: 100%;
+  border-radius: 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  padding-bottom: 3px;
+}
+.project-cards > div > h2{
+margin: 0;
 }
 
-.squares > article > div > a > svg {
-  color: rgb(160, 149, 123);
+.body {
+  width: 90%;
+  background-color: white;
+  height: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.lava-lamp {
+.dream {
+  font-family: "Lora", serif;
+  background-image: radial-gradient(circle, white 55%, #fdf8d7 56%);
+  background-size: 10px 10px;
+  background-size: 10px 10px;
+}
+
+.dream > h2 > a,
+.dream > div > a {
+  color: rgb(59 140 163);
+}
+.dream > .body {
+  background-color: #6abdcd;
+}
+
+.meta {
   font-family: "Rowdies", cursive;
-  background: radial-gradient(
-    #471a19 30%,
-    #290f0e 60%,
-    #120706 80%,
-    #050202 90%,
-    #000000 100%
-  );
-  color: black;
+  background-image: radial-gradient(circle, black 55%, #471a19 56%);
+  background-size: 10px 10px;
 }
 
-.lava-lamp > article > div > a {
-  background: radial-gradient(
-    #ff9c12 0%,
-    #fa9712 30%,
-    #ed8a14 50%,
-    #d67316 70%,
-    #b65419 80%,
-    #9c3a1c 100%
-  );
-  opacity: 0.9;
-  border-radius: 92% 90% 100% 63% / 100% 87% 100% 100%;
-  padding: 0.4rem;
-  color: black;
-}
-
-.lava-lamp > article > .header > h2 > a {
-  color: #ff9c12;
-}
-.lava-lamp > article > .header > h2 {
+.meta > h2 {
   font-family: "MuseoModerno", cursive !important;
 }
 
-.lava-lamp > article > .header > div {
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: radial-gradient(
-    #ff9c12 0%,
-    #fa9712 30%,
-    #ed8a14 50%,
-    #d67316 70%,
-    #b65419 80%,
-    #9c3a1c 100%
-  );
-  opacity: 0.9;
-  border-radius: 67% 43% 53% 53% / 49% 50% 48% 51%;
-  height: 6rem;
+.meta > h2 > a,
+.meta > div > a {
+  color: #ff9c12;
+}
+.meta > .body {
+  background-color: #ff9c12;
 }
 
-.waves {
-  position: relative;
-  overflow: hidden;
-  font-family: "Lora", serif;
-  background-color: #fdf8d7;
-}
-.waves > article {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-.waves > article > .header > div {
-  background-color: #6abdcd;
-  padding: 0.5rem;
-  border-radius: 2rem;
-}
-.waves > article > #btn-group{
-  height: 2rem;
-}
-.waves-effect {
-  width:10rem;
-  height: 60;
+.calculator {
+  color: rgb(255, 255, 255);
+  background-image: radial-gradient(circle, black 55%, rgb(67, 76, 100) 56%);
+  background-size: 10px 10px;
+  font-family: "Rajdhani", sans-serif;
 }
 
+.calculator > h2 > a,
+.calculator > div > a {
+  color: rgb(255, 255, 255);
+}
+.calculator > .body {
+  background-color: rgb(160, 149, 123);
+}
 /* Animation */
 
 .parallax > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 .parallax > use:nth-child(1) {
   animation-delay: -2s;
@@ -184,10 +103,10 @@
 }
 @keyframes move-forever {
   0% {
-   transform: translate3d(-90px,0,0);
+    transform: translate3d(-90px, 0, 0);
   }
-  100% { 
-    transform: translate3d(85px,0,0);
+  100% {
+    transform: translate3d(85px, 0, 0);
   }
 }
 .card .author {
